@@ -25,24 +25,20 @@ Node.js and Express
 MySQL database
 Google Maps API key (for health center locator feature)
 ### Installation
-- Clone the repository:
-bash
-Copy code
-git clone https://github.com/CasperDkk/TelemedicineApp.git
-cd TelemedicineApp
-- Install the necessary dependencies:
-bash
-Copy code
-npm install
-- Configure the .env file with your database credentials, Google Maps API key, and JWT secret.
-- Initialize the MySQL database and run the migrations:
-bash
-Copy code
-node setupDatabase.js
-- Start the application:
-bash
-Copy code
-npm start
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/CasperDkk/TelemedicineApp.git
+   cd TelemedicineApp
+2. **Install the necessary dependencies:**
+   ```bash
+   npm install
+3. **Configure the .env file with your database credentials, Google Maps API key, and JWT secret.**
+4. **Initialize the MySQL database and run the migrations:**
+   ```bash
+   node setupDatabase.js
+5. **Start the application:**
+   ```bash
+   npm start
 ## Core Project Components
 ### User Management and Authentication
 
