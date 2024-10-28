@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register - TeleMedHub</title>
+    <link rel="stylesheet" href="../css/styles.css" />
+  </head>
+  <body>
+    <!-- Header Section -->
+    <header class="header">
+      <h1>TeleMedHub</h1>
+    </header>
+
+    <!-- Registration Form -->
+    <div class="registration-container">
+      <h1>Register</h1>
+      <form id="registrationForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" />
+        <span id="nameError" class="error"></span>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" />
+        <span id="emailError" class="error"></span>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" />
+        <span id="passwordError" class="error"></span>
+
+        <label for="confirmPassword">Confirm Password:</label>
+        <input type="password" id="confirmPassword" name="confirmPassword" />
+        <span id="confirmPasswordError" class="error"></span>
+
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" />
+        <span id="ageError" class="error"></span>
+
+        <label for="gender">Gender:</label>
+        <input type="radio" id="male" name="gender" value="male" /> Male
+        <input type="radio" id="female" name="gender" value="female" /> Female
+        <br />
+        <span id="genderError" class="error"></span><br />
+
+        <label for="country">Country:</label>
+        <select id="country" name="country">
+          <option value="">Select Country</option>
+          <!-- Options will be populated by JavaScript --></select
+        ><br />
+        <span id="countryError" class="error"></span><br />
+
+        <!-- Checkbox with ID -->
+        <input type="checkbox" id="termsCheckbox" required /> I agree to the
+        terms and conditions<br />
+        <span id="termsError" class="error"></span>
+
+        <input type="submit" value="Register" /><br /><br />
+
+        <!-- Link to Login Page -->
+        <p>Already have an account? <a href="login.html">Login here</a></p>
+      </form>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <p>&copy; 2024 TeleMedHub. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <!-- Link to validation script -->
+    <script src="../js/form-validation.js"></script>
+    <!-- Link to countries population script -->
+    <script src="../js/populate-countries.js"></script>
+  </body>
+</html>

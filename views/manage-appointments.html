@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Manage Appointments - TeleMedHub</title>
+    <link rel="stylesheet" href="../css/styles.css" />
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+      <div class="container">
+        <h1 class="logo">TeleMedHub</h1>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="dashboard.html">Dashboard</a></li>
+          <li>
+            <a href="#" id="logout-btn" class="btn btn-primary">Logout</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Manage Appointments Section -->
+    <section class="manage-appointments">
+      <div class="container">
+        <h2>Manage Appointments</h2>
+
+        <!-- Appointment Management Section -->
+        <div class="appointment-overview">
+          <h3>Manage Appointments</h3>
+          <table id="appointments-table">
+            <thead>
+              <tr>
+                <th style="width: 4%">ID</th>
+                <th style="width: 12%">Patient Name</th>
+                <th style="width: 12%">Doctor Name</th>
+                <th style="width: 6%">Date</th>
+                <th style="width: 5%">Time</th>
+                <th style="width: 7%">Status</th>
+                <th style="width: 10%">Actions</th>
+              </tr>
+            </thead>
+            <tbody id="appointments-body">
+              <!-- Dynamic content will be inserted here via JavaScript -->
+              <tr>
+                <td>1</td>
+                <td>John Doe</td>
+                <td>Dr. Smith</td>
+                <td>2024-10-30</td>
+                <td>10:00 AM</td>
+                <td>Confirmed</td>
+                <td>
+                  <button class="btn btn-primary">Edit</button>
+                  <button class="btn btn-danger">Cancel</button>
+                </td>
+              </tr>
+              <!-- Add more rows as needed -->
+            </tbody>
+          </table>
+
+          <!-- Message if no appointments -->
+          <div id="no-appointments-message" style="display: none">
+            No appointments found.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <p>&copy; 2024 TeleMedHub. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <!-- JavaScript Files -->
+    <script src="../js/manage-appointments.js"></script>
+  </body>
+</html>

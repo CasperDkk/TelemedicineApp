@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Manage Doctors - TeleMedHub</title>
+    <link rel="stylesheet" href="../css/styles.css" />
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+      <div class="container">
+        <h1 class="logo">TeleMedHub</h1>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="dashboard.html">Dashboard</a></li>
+          <li>
+            <a href="#" id="logout-btn" class="btn btn-primary">Logout</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Manage Doctors Section -->
+    <section class="manage-doctors">
+      <div class="container">
+        <h2>Manage Doctors</h2>
+
+        <form id="doctorForm">
+          <input type="hidden" id="doctorId" name="doctorId" />
+          <label for="first_name">First Name:</label>
+          <input type="text" id="first_name" name="first_name" required />
+
+          <label for="last_name">Last Name:</label>
+          <input type="text" id="last_name" name="last_name" required />
+
+          <label for="specialization">Specialization:</label>
+          <input
+            type="text"
+            id="specialization"
+            name="specialization"
+            required
+          />
+
+          <label for="email">Email:</label>
+          <input type="text" id="email" name="email" required />
+
+          <label for="phone">Phone:</label>
+          <input type="text" id="phone" name="phone" required />
+
+          <label for="schedule">Schedule (JSON format):</label>
+          <textarea id="schedule" name="schedule"></textarea>
+
+          <button type="submit">Add/Update Doctor</button>
+        </form>
+
+        <!-- Doctors List -->
+        <h2>Doctors List</h2>
+        <table id="doctorsTable">
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Name</th>
+              <th>Specialization</th>
+              <th>Email</th>
+              <th>Phone</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <p>&copy; 2024 TeleMedHub. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <!-- JavaScript Files -->
+    <script src="../js/manage-doctors.js"></script>
+  </body>
+</html>

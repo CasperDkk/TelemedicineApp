@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Manage Patients - TeleMedHub</title>
+    <link rel="stylesheet" href="../css/styles.css" />
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+      <div class="container">
+        <h1 class="logo">TeleMedHub</h1>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="dashboard.html">Dashboard</a></li>
+          <li>
+            <a href="#" id="logout-btn" class="btn btn-primary">Logout</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Manage Patients Section -->
+    <section class="manage-patients">
+      <div class="container">
+        <h2>Manage Patients</h2>
+
+        <!-- Search Bar -->
+        <input
+          type="text"
+          id="searchInput"
+          placeholder="Search patients..."
+          onkeyup="filterPatients()"
+        />
+
+        <!-- Patients List -->
+        <table id="patientsTable">
+          <thead>
+            <tr>
+              <th style="width: 4%">ID</th>
+              <th style="width: 15%">First Name</th>
+              <th style="width: 15%">Last Name</th>
+              <th style="width: 25%">Email</th>
+              <th style="width: 10%">Phone</th>
+              <th style="width: 10%">Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Empty row for future content -->
+            <tr>
+              <td colspan="6" style="text-align: center; color: gray">
+                No patients found.
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <p>&copy; 2024 TeleMedHub. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <!-- JavaScript Files -->
+    <script src="../js/manage-patients.js"></script>
+    <!-- Link to your JS -->
+  </body>
+</html>
